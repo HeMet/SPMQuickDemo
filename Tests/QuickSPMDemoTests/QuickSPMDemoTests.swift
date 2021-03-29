@@ -1,7 +1,6 @@
 import XCTest
 import Quick
 import Nimble
-import class Foundation.Bundle
 
 final class SampleLibrarySpec: QuickSpec {
     override func spec() {

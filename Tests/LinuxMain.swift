@@ -1,11 +1,7 @@
 import XCTest
 import Quick
 
-import QuickSPMDemoTests
-
-var tests = [XCTestCaseEntry]()
-tests += QuickSPMDemoTests.allTests()
-XCTMain(tests)
+@testable import QuickSPMDemoTests
 
 QCKMain([
     SampleLibrarySpec.self,
