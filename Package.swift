@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "QuickSPMDemo",
+    platforms: [.macOS(.v10_11)],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/Quick/Quick.git", from: "3.1.2"),

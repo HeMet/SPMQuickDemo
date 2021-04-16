@@ -45,6 +45,6 @@ b_in.d["0"] = A(b: b_in)
 b_in.d["1"] = A(b: b_in)
 let data = NSKeyedArchiver.archivedData(withRootObject: b_in)
 print("!!! Encoded")
-let b_out = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? B
-
+let b_out_any: Any? = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data)
+let b_out = b_out_any as? B
 print(b_out)
